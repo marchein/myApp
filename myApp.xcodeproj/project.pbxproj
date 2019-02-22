@@ -10,9 +10,11 @@
 		5BF68A872220627200A631A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF68A862220627200A631A7 /* AppDelegate.swift */; };
 		5BF68A892220627200A631A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF68A882220627200A631A7 /* ViewController.swift */; };
 		5BF68A8C2220627200A631A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF68A8A2220627200A631A7 /* Main.storyboard */; };
-		5BF68A8E2220627300A631A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF68A8D2220627300A631A7 /* Assets.xcassets */; };
 		5BF68A912220627300A631A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF68A8F2220627300A631A7 /* LaunchScreen.storyboard */; };
 		5BF68A9C2220627300A631A7 /* myAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF68A9B2220627300A631A7 /* myAppUITests.swift */; };
+		5BF68AA82220634000A631A7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF68AA72220634000A631A7 /* WebKit.framework */; };
+		5BF68AAA22206CDF00A631A7 /* UIViewController+Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF68AA922206CDF00A631A7 /* UIViewController+Safari.swift */; };
+		5BF68AAE2220741400A631A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF68AAD2220741400A631A7 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +32,14 @@
 		5BF68A862220627200A631A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF68A882220627200A631A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5BF68A8B2220627200A631A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5BF68A8D2220627300A631A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BF68A902220627300A631A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BF68A922220627300A631A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF68A972220627300A631A7 /* myAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF68A9B2220627300A631A7 /* myAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAppUITests.swift; sourceTree = "<group>"; };
 		5BF68A9D2220627300A631A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF68AA72220634000A631A7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5BF68AA922206CDF00A631A7 /* UIViewController+Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Safari.swift"; sourceTree = "<group>"; };
+		5BF68AAD2220741400A631A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF68AA82220634000A631A7 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 				5BF68A852220627200A631A7 /* myApp */,
 				5BF68A9A2220627300A631A7 /* myAppUITests */,
 				5BF68A842220627200A631A7 /* Products */,
+				5BF68AA62220634000A631A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +83,13 @@
 		5BF68A852220627200A631A7 /* myApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BF68AAD2220741400A631A7 /* Assets.xcassets */,
 				5BF68A862220627200A631A7 /* AppDelegate.swift */,
 				5BF68A882220627200A631A7 /* ViewController.swift */,
 				5BF68A8A2220627200A631A7 /* Main.storyboard */,
-				5BF68A8D2220627300A631A7 /* Assets.xcassets */,
 				5BF68A8F2220627300A631A7 /* LaunchScreen.storyboard */,
 				5BF68A922220627300A631A7 /* Info.plist */,
+				5BF68AA922206CDF00A631A7 /* UIViewController+Safari.swift */,
 			);
 			path = myApp;
 			sourceTree = "<group>";
@@ -94,6 +101,14 @@
 				5BF68A9D2220627300A631A7 /* Info.plist */,
 			);
 			path = myAppUITests;
+			sourceTree = "<group>";
+		};
+		5BF68AA62220634000A631A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BF68AA72220634000A631A7 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF68A912220627300A631A7 /* LaunchScreen.storyboard in Resources */,
-				5BF68A8E2220627300A631A7 /* Assets.xcassets in Resources */,
+				5BF68AAE2220741400A631A7 /* Assets.xcassets in Resources */,
 				5BF68A8C2220627200A631A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF68AAA22206CDF00A631A7 /* UIViewController+Safari.swift in Sources */,
 				5BF68A892220627200A631A7 /* ViewController.swift in Sources */,
 				5BF68A872220627200A631A7 /* AppDelegate.swift in Sources */,
 			);
